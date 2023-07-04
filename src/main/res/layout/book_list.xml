@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="#5C3727">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/navbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+        <ImageButton
+            android:id="@+id/add_book"
+            android:layout_width="0dp"
+            android:background="#5C3727"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_add_24"/>
+        <ImageButton
+            android:id="@+id/msg_btn"
+            android:layout_width="0dp"
+            android:background="#5C3727"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_message_24"/>
+
+        <ImageButton
+            android:id="@+id/own_books_btn"
+            android:layout_width="0dp"
+            android:background="#5C3727"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_menu_own_book_24"/>
+
+        <ImageButton
+            android:id="@+id/profile_btn"
+            android:layout_width="0dp"
+            android:background="#5C3727"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_white_person_24"/>
+        <ImageButton
+            android:id="@+id/traded_btn"
+            android:layout_width="0dp"
+            android:background="#5C3727"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_transfer_within_a_station_24"/>
+
+        <ImageButton
+            android:id="@+id/feed_show_btn"
+            android:layout_width="0dp"
+            android:background="#5C3727"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_assessment_24"/>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:searchIcon="@drawable/ic_baseline_search_24" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/book_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
