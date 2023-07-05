@@ -1,0 +1,51 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+*.apks
+*.dex
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Proguard files
+proguard/
+
+# Log files
+*.log
+
+# Android Studio files
+*.iml
+.idea/
+.gradle/
+captures/
+
+# User-specific files
+/.idea/libraries
+/.idea/workspace.xml
+/.idea/tasks.xml
+/.idea/.name
+
+# Keystore files
+*.jks
+*.keystore
+
+# External native build folder generated in Android Studio 2.2 and later
+/cmake/
+
+# Google Services (e.g. google-services.json)
+/google-services/
+
+# Firebase (e.g. google-services.json)
+app/google-services.json
+
+# Crashlytics build-generated files
+app/crashlytics.properties
+app/fabric.properties
+
+# Android Emulator
+.emulator/
